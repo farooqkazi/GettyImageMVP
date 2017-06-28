@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+    android:id="@+id/main_recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:demo_child_count="10"
+    app:demo_layout="@layout/item_getty_image_placeholder"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <com.hrskrs.gettyimagemvp.views.HKProgressBar
+    android:id="@+id/main_loadmore_progressbar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:indeterminate="true"
+    tools:indeterminate="false" />
+
+  <android.support.design.widget.FloatingActionButton
+    android:id="@+id/main_search_fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:src="@drawable/ic_search"
+    android:visibility="gone"
+    app:backgroundTint="@color/colorPrimary"
+    app:elevation="@dimen/fab_elevation"
+    app:fabSize="normal"
+    app:rippleColor="@color/c_f7f7f7"
+    app:useCompatPadding="true"
+    tools:ignore="RelativeOverlap"
+    tools:visibility="visible" />
+
+</RelativeLayout>

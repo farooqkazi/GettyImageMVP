@@ -1,0 +1,65 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+  repositories {
+    jcenter()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:2.3.3'
+
+    // NOTE: Do not place your application dependencies here; they belong
+    // in the individual module build.gradle files
+  }
+}
+
+allprojects {
+  repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+  }
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}
+
+ext{
+  def versionMajor = 1
+  def versionMinor = 0
+  def versionPatch = 0
+
+  compileSdkVersion = 25
+  buildToolsVersion = "25.0.1"
+  applicationId = "com.hrskrs.gettyimagemvp"
+  minSdkVersion = 15
+  targetSdkVersion = 25
+
+  versionCode = versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100
+  versionName = "${versionMajor}.${versionMinor}.${versionPatch}"
+
+  supportLibVersion = "25.3.1"
+  constraintLayoutVersion = "1.0.2"
+  butterKnifeVersion = "8.1.0"
+  glideVersion = "3.7.0"
+  retrofitVersion  = "2.0.2"
+  okhttpVersion = "3.4.1"
+  rxAndroidVersion = "2.0.1"
+  rxJavaVersion = "2.0.5"
+  rxJavaAdapterVersion = "1.0.0"
+  javaxAnnonationVersion = "1.0"
+  javaPoetVersion = "1.7.0"
+  daggerVersion = "2.10"
+  parcelerVersion = "1.1.6"
+  leakCanaryVersion = "1.5"
+  shimmerRecyclerViewVersion = "v1.0"
+
+  junitVersion = "4.12"
+  hamcrestMatcherVersion = "1.3"
+  mockitoVersion = "2.0.57-beta"
+  roboElectricVersion = "3.3.2"
+
+  espressoVersion = "2.2.2"
+  espressoRulesVersion = "0.4"
+  findbugVersion = "3.0.1"
+}

@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">GettyImage MVP</string>
+
+  <string name="error_network">Check your internet connection!</string>
+  <string name="error_timeout">Timeout</string>
+
+  <string name="warn_empty_field">Field cannot be empty</string>
+
+  <string name="title_caption">CAPTION</string>
+
+</resources>
