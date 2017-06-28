@@ -118,4 +118,4 @@ Another workaround is by editing `Run Configurations` and setting Working Direct
 <li>
 We can separate app on modules for increasing build time. (https://medium.freecodecamp.com/how-modularisation-affects-build-time-of-an-android-application-43a984ce9968)
 </li>
-</ul># GettyImageMVP
+
